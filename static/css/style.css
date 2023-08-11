@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=REM:wght@100;200;300&family=Roboto+Mono:wght@100&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .body{
+            background: linear-gradient(rgb(54, 85, 176), rgb(52, 41, 248));
+            color: rgb(238, 227, 227);
+        }
+        .darkmode{
+            font-family: 'REM', sans-serif;
+        }
+        /* header{
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        } */
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(63, 58, 56);
+            opacity: 0.6;
+        }
+
+        .nav-list{
+            display: flex;
+            justify-content: center;
+            margin-right: -150px;
+        }
+
+        .nav-list li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        .darkbtn i{
+            filter: invert(100);
+        }
+        .nav-list li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-list li a:hover{
+            color: rgb(44, 163, 242);
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .nav-list i{
+            font-size: 25px;
+            padding: 0px 20px;
+            cursor: pointer;
+        }
+        .left{
+            display: flex;
+            font-size: 1.6rem;
+            color: rgb(44, 163, 242);
+            font-weight: bold;
+            margin-left: -200px;
+        }
+        .left-section{
+            display: flex;
+        }
+        .logo{
+            height: 72px;
+            width: 100px;
+            opacity: 5;
+            animation: all 3s ease-in-out infinite alternate;
+        }
+        @keyframes all{
+            from {
+                transform: rotate(-10deg);
+            }
+            to {
+                transform: rotate(25deg);
+            }
+        }
+        .logo-title{
+            margin: auto 0px;
+        }
+        #playButton{
+            background: none;
+            color: rgb(42, 42, 208);
+            font-size: 28px;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-family: 'REM', sans-serif;
+        }
+        
+        .homeSection{
+            margin: 110px 0px;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .firstSection>div{
+            width: 30%;
+        }
+
+        .rightSection img{
+            width: 72%;
+        }
+        .buttons{
+            margin-top: 8px;
+            margin-left: 130px;
+        }
+        .buttons a{
+            text-decoration: none;
+            color: black;
+        }
+        .a-btn{
+            font-family: 'REM', sans-serif;
+            background: none;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 16px;
+            padding: 2px 4px;
+            margin: 6px 5px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.5s ease-in-out;
+        }
+        .a-btn:hover{
+            font-size: 16.5px;
+            background-color: rgb(95, 95, 138);
+        }
+        .btn{
+            font-family: 'REM', sans-serif;
+            background: none;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 16px;
+            padding: 2px 4px;
+            margin: 6px 5px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.5s ease-in-out;
+        }
+        .btn:hover{
+            background-color: rgb(95, 95, 138);
+            transform: scale(1.01);
+        }
+        
+        .hello{
+            font-size: 1.5rem;
+        }
+        #element{
+            color: rgb(20, 20, 52);
+            font-size: 2rem;
+        }
+        .work{
+            font-size: 1.3rem;
+        }
+        .work span{
+            color: rgb(14, 14, 24);
+            font-size: 1.4rem;
+        }
+        .bio{
+            font-size: 14px;
+            text-align: justify;
+            font-family: 'Bree Serif', serif;
+        }
+        .bio-center{
+            padding: 50px 0px;
+        }
+        main hr{
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+            margin-bottom: 90px;
+            background-color: rgb(126, 126, 174);
+        }
+        .aboutSection{
+            width: 80vw;
+            margin: 60px auto;
+        }
+        .aboutObjects{
+            display: flex;
+        }
+        .pic-box{
+            margin: 0px 20px;
+        }
+        .mypic{
+            height: 300px;
+            border: 2px solid white;
+            border-radius: 200px;
+        }
+        .content-box{
+            margin: 0px 30px;
+            width: 70%;
+            height: 300px;
+        }
+        .educationSection{
+            max-width: 100vw;
+            margin: 60px auto;
+        }
+        .heading{
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: rgb(9, 9, 79);
+        }
+        .me{
+            color: rgb(2, 12, 32);
+        }
+        .emain-box{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 60px 0px;
+        }
+        .ebox{
+            width: 27%;
+            height: 175px;
+            position: relative;
+            padding: 20px 0px;
+            font-size: 25px;
+            transition: all 0.5s ease-in-out;
+        }
+        .ebox:hover{
+            transform: scale(1.02);
+        }
+        .ebox::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 15px;
+            background-color: rgb(49, 49, 93);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .course{
+            margin: 0px 6px;
+            margin-top: 13px;
+        }
+        .course i{
+            filter: invert(100);
+        }
+        .sm-icon{
+            font-size: 20px;
+        }
+        .B-Tech{
+            padding: 0px 10px;
+            color: rgb(6, 6, 39);
+            font-weight: bold;
+        }
+        .duration{
+            margin: 6px 10px;
+            font-size: 20px;
+        }
+        .duration i{
+            filter: invert(100);
+        }
+        .date{
+            padding: 0px 10px;
+            font-size: 18px;
+        }
+        .faculty{
+            padding: 0px 12px;
+            font-size: 18px;
+        }
+        .I-name{
+            font-size: 16px;
+            padding: 8px 12px;
+        }
+        .projectSection{
+            max-width: 100vw;
+            margin: 60px auto;
+        }
+        .pmain-box{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 60px 0px;
+            margin-top: 80px;
+        }
+        .pbox{
+            width: 32%;
+            height: 400px;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+        }
+        .pbox-full{
+            height: 240px;
+        }
+        .pboxSec{
+            width: 32%;
+            height: 400px;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+        }
+        .pbox-fullSec{
+            height: 240px;
+        }
+        .pbox:hover{
+            transform: scale(1.02);
+        }
+        .pboxSec:hover{
+            transform: scale(1.02);
+        }
+        .pbox::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-color: rgb(1, 1, 16);
+            opacity: 0.3;
+        }
+        .pboxSec::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-color: rgb(1, 1, 16);
+            opacity: 0.3;
+        }
+        .p-box{
+            margin: 25px 0px;
+        }
+        .pbox-big{
+            height: 470px;
+        }
+        .pbox-bgfull{
+            height: 270px;
+        }
+        .pbox-bigSec{
+            height: 470px;
+        }
+        .pbox-bgfullSec{
+            height: 270px;
+        }
+        .p-title{
+            font-size: 26px;
+            text-align: center;
+            padding: 0px 31px;
+            color: rgb(6, 6, 39);
+            font-weight: bold;
+        }
+        .p-duration{
+            width: 30%;
+            margin: 6px auto;
+            font-size: 20px;
+        }
+        .p-duration i{
+            filter: invert(100);
+        }
+        .details{
+            font-size: 13px;
+            padding: 2px 15px;
+            margin: 0px 8px;
+            text-align: justify;
+            font-family: 'Bree Serif', serif;
+        }
+        .summary{
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'REM', sans-serif;
+        }
+        .smain-box{
+            margin: 80px 30px;
+        }
+        .smain-subbox{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px 0px;
+        }
+        .sbox{
+            width: 24%;
+            height: 165px;
+            position: relative;
+            padding: 23px 0px;
+            font-size: 25px;
+            transition: all 0.5s ease-in-out;
+        }
+        .sbox:hover{
+            transform: scale(1.02);
+        }
+        .sbox::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 15px;
+            background-color: rgb(4, 4, 51);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .icon-center{
+            width: 10%;
+            margin: 0px auto;
+        }
+        .s-icon{
+            height: 35px;
+            width: 35px;
+            margin: -5px auto;
+        }
+        .sicon-sm{
+            width: 30px;
+        }
+        .sicon-bg{
+            width: 40px;
+        }
+        .s-title{
+            font-size: 26px;
+            text-align: center;
+            padding: 0px 31px;
+            color: rgb(6, 6, 39);
+            font-weight: bold;
+        }
+        .s-content{
+            font-size: 15px;
+            padding: 10px 15px;
+            text-align: justify;
+        }
+        .t-center{
+            text-align: center;
+            font-size: 16px;
+            padding-bottom: 4px;
+        }
+        
+        .cmain-box{
+            display: flex;
+            justify-content:space-around ;
+            margin: 50px 0px;
+        }
+        .cbox{
+            width: 30%;
+            height: 350px;
+            position: relative;
+            padding: 18px 0px;
+            font-size: 25px;
+        }
+        .cbox::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 15px;
+            background-color: rgb(4, 4, 51);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .c-box{
+            position: relative;
+            width: 30%;
+            height: 300px;
+            padding: 35px 0px;
+        }
+        .c-box::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 15px;
+            background-color: rgb(4, 4, 51);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .ct-center{
+            margin: 0px 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .c-icon{
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            margin: 35px 8px;
+        }
+        .c-icon i{
+            filter: invert(100);
+            margin-right: 18px;
+        }
+        .c-content{
+            font-size: 18px;
+        }
+        .cicon-sm i{
+            font-size: 22px;
+        }
+        .cicon-bg{
+            font: 27px;
+        }
+        .c-form textarea,input{
+            display: block;
+            width: 85%;
+            font-size: 15px;
+            margin: 16px auto;
+            padding: 5px 3px;
+            border: 1px solid black;
+            border-radius: 6px;
+            outline: none;
+            opacity: 0.8;
+        }
+        .c-form textarea{
+            margin-bottom: 6px;
+        }
+        .f-btn{
+            display: inline-block;
+            width: 100%;
+            padding: 8px 4px;
+            border: 1px solid black;
+            border-radius: 6px;
+            cursor: pointer;
+            background: rgb(16, 16, 72);
+            color: white;
+            font-size: 18px;
+            outline: none;
+        }
+        .f-btn:hover{
+            background: rgb(22, 22, 74);
+        }
+        .f-button{
+            width: 84%;
+            margin: 0px auto;
+        }
+        .footerSection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(63, 58, 56);
+            font-size: 16px;
+            height: 70px;
+        }
+        .burger{
+            margin: 10px 10px;
+            /* margin-left: 300px; */
+            cursor: pointer;
+            display: none;
+        }   
+        .line{
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 4px 3px;
+        }                 

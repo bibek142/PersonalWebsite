@@ -1,0 +1,228 @@
+@media only screen and (max-width:1200px){
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .work {
+        font-size: 15px;
+    }
+    .work span {
+        color: rgb(14, 14, 24);
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:995px){
+    .left{
+        margin-left: 0px;
+    }
+    .nav-list{
+        margin-right: 0px;
+    }
+    .buttons{
+        margin-left: 90px;
+    }
+    .aboutSection{
+        width: 100vw;
+        margin: 60px auto;
+    }
+    .pbox{
+        width: 47%;
+    }
+    .pboxSec{
+        width: 47%;
+    }
+    .smain-box{
+        margin: 80px 0px;
+    }
+    .sbox{
+        width: 32%;
+    }
+    .c-box{
+        width: 40%;
+    }
+}
+/* @media only screen and (max-width:800px){
+    .nav-list{
+       display: inline;
+       float: right;
+       margin-top: 350px;
+       margin-right: -415px;
+    }
+    .navbar{
+        display: flex;
+        width: 675px;
+        background-color: rgb(2, 2, 20);
+        opacity: 0.6;
+    }
+    .nav-list li{
+        padding: 15px 0px;
+        text-align: center;
+    }
+    .nav-list i{
+        padding: 10px 56px;
+    }
+    .left{
+        margin-left: -35px;
+    }
+    .logo-title{
+        font-size: 20px;
+        margin: auto 0px;
+    }
+    .burger{
+        display: block;
+    }
+    .v-classresp{
+        opacity: 0;
+    }
+} */
+@media only screen and (max-width:800px){
+    .navbar{
+        height: 280px;
+        flex-direction: column;
+        justify-content: inherit;
+        transition: all 0.5s ease-out;
+    }
+    .h-class-resp{
+        height: 50px;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.7s ease-out;
+    }
+    .nav-list li{
+        margin: 10px 0px;
+    }
+    .logo{
+        height: 40px;
+        width: 70px;
+    }
+    .logo-title{
+        font-size: 20px;
+    }
+    .left-section{
+        display: flex;
+    }
+    .left{
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .burger{
+        display: block;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .firstSection {
+        flex-direction: column;
+    }
+
+    .firstSection>div {
+        width: 85%;
+    }
+    .rightSection{
+        display: none;
+    }
+    .homeSection{
+        margin: 70px 0px;
+        height: 350px;
+    }
+    .buttons{
+        margin-top: 18px;
+        margin-left: 29px;
+    }
+    .aboutSection{
+        width: 100vw;
+        margin: 60px 0px;
+    }
+    .aboutObjects{
+        flex-direction: column;
+    }
+    .pic-box{
+        margin: 0px auto;
+    }
+    .content-box{
+        width: 90%;
+        margin: 0px auto;
+        height: 500px;
+    }
+    .emain-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px;
+    }
+    .ebox{
+        width: 80%;
+        margin: 30px 0px;
+    }
+    .pmain-box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin: 0px 0px;
+    }
+    .pbox{
+        width: 85%;
+        height: 500px;
+        margin: 30px 0px;
+    }
+    .pbox-full{
+        height: 260px;
+    }
+    .pboxSec{
+        width: 85%;
+        height: 500px;
+        margin: 30px 0px;
+    }
+    .pbox-fullSec{
+        height: 292px;
+    }
+    .pbox-big{
+        height: 585px;
+    }
+    .pbox-bgfull{
+        height: 308px;
+    }
+    .pbox-bigSec{
+        height: 580px;
+    }
+    .pbox-bgfullSec{
+        height: 317px;
+    }
+    .p-duration{
+        width: 40%;
+    }
+    .p-title{
+        padding: 0px 18px;
+    }
+    .smain-subbox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px;
+    }
+    .sbox{
+        width: 80%;
+        margin: 20px 0px;
+        height: 195px;
+    }
+    .cmain-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cbox{
+        width: 85%;
+        margin: 25px 0px;
+    }
+    .c-box{
+        width: 90%;
+        margin: 25px 0px;
+    }
+    .footerSection{
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
