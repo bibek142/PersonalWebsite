@@ -3,8 +3,12 @@ const path = require("path");
 const app = express();
 const bodyparser = require("body-parser");
 const mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost/pWebContactForm',{useNewUrlParser: true});
-const port = 8000;
+require('dotenv').config()
+// mongoose.connect('mongodb://localhost/pWebContactForm',{useNewUrlParser: true});
+// const port = 8000;
+
+const connectDB = require('./connectMongo')
+connectDB()
 
 var contactFSchema = new mongoose.Schema({
     name: String,
@@ -41,8 +45,10 @@ app.post('/contact', (req, res)=>{
         res.status(404).send("Data has not been sent to the database")
     });
 })
-app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
+
+const PORT = process.env.PORT
+app.listen(PORT, ()=>{
+    console.log("The application started successfully on port" + PORT);
 });
 
 
