@@ -17,6 +17,11 @@ darkmode = document.querySelector('.body')
 
 darkBtn.addEventListener('click', ()=>{
     darkmode.classList.toggle('body');
+    if ( darkmode.classList.contains('body')) {
+        alert("Enables Darkmode");
+    } else {
+        alert("Dark mode will be disabled");
+    }
 })
 
 
@@ -46,4 +51,24 @@ pboxBigSec = document.querySelector('.pbox-bigSec')
 
 fullContentBgSec.addEventListener('click', ()=>{
     pboxBigSec.classList.toggle('pbox-bgfullSec')
+})
+
+
+var notification
+var interval
+document.addEventListener("visibilitychange", () =>{
+    if(document.visibilityState === "hidden"){
+        const leaveDate = new Date()
+        interval = setInterval(()=>{
+            notification = new Notification("Come Back Please", {
+                body: `You have been gone for ${Math.round(
+                    (new Date() - leaveDate) /1000
+                )} seconds`,
+                tag: "Come Back",
+            })
+        }, 100)
+    }else{
+        if (interval) clearInterval(interval)
+        if (notification) notification.close()
+    }
 })

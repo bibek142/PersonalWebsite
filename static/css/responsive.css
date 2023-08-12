@@ -1,4 +1,4 @@
-@media only screen and (max-width:1200px){
+/* @media only screen and (max-width:1200px){
     .navbar{
         justify-content: space-evenly;
     }
@@ -9,8 +9,8 @@
         color: rgb(14, 14, 24);
         font-size: 20px;
     }
-}
-@media only screen and (max-width:995px){
+} */
+/* @media only screen and (max-width:995px){
     .left{
         margin-left: 0px;
     }
@@ -39,42 +39,172 @@
     .c-box{
         width: 40%;
     }
-}
-/* @media only screen and (max-width:800px){
-    .nav-list{
-       display: inline;
-       float: right;
-       margin-top: 350px;
-       margin-right: -415px;
-    }
+} */
+@media only screen and (max-width:995px){
     .navbar{
-        display: flex;
-        width: 675px;
-        background-color: rgb(2, 2, 20);
-        opacity: 0.6;
+        height: 280px;
+        flex-direction: column;
+        justify-content: inherit;
+        transition: all 0.5s ease-out;
+    }
+    .h-class-resp{
+        height: 50px;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        transition: all 0.7s ease-out;
     }
     .nav-list li{
-        padding: 15px 0px;
-        text-align: center;
+        margin: 10px 0px;
     }
-    .nav-list i{
-        padding: 10px 56px;
-    }
-    .left{
-        margin-left: -35px;
+    .logo{
+        height: 40px;
+        width: 70px;
     }
     .logo-title{
         font-size: 20px;
-        margin: auto 0px;
+    }
+    .left-section{
+        display: flex;
+    }
+    .left{
+        width: 100vw;
+        justify-content: space-between;
+        margin-left: 0px;
     }
     .burger{
         display: block;
     }
-    .v-classresp{
+    .v-class-resp{
         opacity: 0;
     }
-} */
-@media only screen and (max-width:800px){
+    .firstSection {
+        flex-direction: column;
+    }
+
+    .firstSection>div {
+        width: 85%;
+    }
+    .rightSection{
+        display: none;
+    }
+    .homeSection{
+        margin: 70px 0px;
+        height: 200px;
+    }
+    .buttons{
+        margin-top: 18px;
+        margin-left: 70px;
+    }
+    .aboutSection{
+        width: 100vw;
+        margin: 0px 0px;
+    }
+    .aboutObjects{
+        flex-direction: column;
+    }
+    .pic-box{
+        margin: 0px auto;
+    }
+    .content-box{
+        width: 70%;
+        margin: 0px auto;
+        height: 270px;
+    }
+    .emain-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px;
+    }
+    .ebox{
+        width: 35%;
+        margin: 20px 0px;
+        height: 150px;
+    }
+    .pmain-box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin: 0px 0px;
+    }
+    .pbox{
+        width: 35%;
+        height: 470px;
+        margin: 30px 0px;
+    }
+    .pbox-full{
+        height: 250px;
+    }
+    .pboxSec{
+        width: 35%;
+        height: 470px;
+        margin: 30px 0px;
+    }
+    .pbox-fullSec{
+        height: 285px;
+    }
+    .pbox-big{
+        height: 550px;
+    }
+    .pbox-bgfull{
+        height: 295px;
+    }
+    .pbox-bigSec{
+        height: 535px;
+    }
+    .pbox-bgfullSec{
+        height: 300px;
+    }
+    .p-duration{
+        width: 40%;
+    }
+    .p-title{
+        padding: 0px 18px;
+    }
+    .smain-box{
+        margin: 0px 0px;
+    }
+    .smain-subbox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px;
+    }
+    .sbox{
+        width: 40%;
+        margin: 20px 0px;
+        height: 150px;
+    }
+    .contactSection{
+        height: 100vh;
+        margin: auto 0px;
+    }
+    .cmain-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cbox{
+        width: 50%;
+        margin: 25px 0px;
+    }
+    .c-box{
+        width: 40%;
+        margin: 25px 0px;
+        height: 275;
+    }
+    .footerSection{
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+/* @media only screen and (max-width:800px){
     .navbar{
         height: 280px;
         flex-direction: column;
@@ -207,6 +337,10 @@
         margin: 20px 0px;
         height: 195px;
     }
+    .contactSection{
+        height: 100vh;
+        margin: auto 0px;
+    }
     .cmain-box{
         flex-direction: column;
         justify-content: center;
@@ -225,4 +359,4 @@
         font-weight: bold;
         text-align: center;
     }
-}
+} */

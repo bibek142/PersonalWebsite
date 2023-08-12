@@ -442,7 +442,9 @@
             font-size: 16px;
             padding-bottom: 4px;
         }
-        
+        .contactSection{
+            height: 100vh;
+        }
         .cmain-box{
             display: flex;
             justify-content:space-around ;
@@ -561,4 +563,4 @@
             background-color: white;
             height: 4px;
             margin: 4px 3px;
-        }                 
+        }     
