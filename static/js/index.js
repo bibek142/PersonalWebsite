@@ -19,8 +19,10 @@ darkBtn.addEventListener('click', ()=>{
     darkmode.classList.toggle('body');
     if ( darkmode.classList.contains('body')) {
         alert("Enables Darkmode");
+        // confirm("Enables Darkmode");
     } else {
         alert("Dark mode will be disabled");
+        // confirm("Darkmode will be disabled");
     }
 })
 
