@@ -21,11 +21,9 @@ darkBtn.addEventListener('click', ()=>{
     if ( darkmode.classList.contains('body')) {
         darkButton.classList.add('fa-sun');
         darkButton.classList.remove('fa-moon');
-        alert("Enables Darkmode");
     } else {
         darkButton.classList.remove('fa-sun');
         darkButton.classList.add('fa-moon');
-        alert("Dark mode will be disabled");
     }
 })
 
