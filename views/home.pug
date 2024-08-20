@@ -270,21 +270,3 @@ block content
       playButton.addEventListener('click', () => {
       audio.play()
       });
-      
-    script. 
-      const userName = prompt("Welcome!! Kindly provide your name:");
-      const audios = new Audio('../static/tone/krishna flute.mp3');
-
-      if (userName !== null && userName !== "") {
-      audios.play()
-      .then(() => {
-      alert(`Hare Krishna, ${userName}!, Click on Hare Krishna to listen the world's peaceful tune`);
-      })
-      .catch(error => {
-      console.error('Failed to play audio:', error.message);
-      alert(`Hare Krishna, ${userName}!, Click on Hare Krishna to listen the world's peaceful tune`);
-      });
-      } else {
-      alert(`You didn't enter a name, Click on Hare Krishna to listen the world's peaceful tune`);
-      }
-    script(src='https://kit.fontawesome.com/6e1db5778e.js' crossorigin='anonymous')  
